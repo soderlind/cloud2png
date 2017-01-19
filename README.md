@@ -19,7 +19,7 @@ In the Cloud2PNG Settings you can also enable a link to Cloud2PNG Customizer fro
 
 ## Use
 
-You add a link to the site you'd like to create a snappshot of by using the `[cloud2png]` shortcode, eg: `[cloud2png url="https://wordpress.org"]`
+Add link to the site you'd like to create a snappshot of, by using the `[cloud2png]` shortcode, eg: `[cloud2png url="https://wordpress.org"]`
 
 ## Customize the snapshots
 
