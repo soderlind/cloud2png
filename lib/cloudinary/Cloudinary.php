@@ -10,7 +10,7 @@ class Cloudinary {
     const RANGE_VALUE_RE = '/^(?P<value>(\d+\.)?\d+)(?P<modifier>[%pP])?$/';
     const RANGE_RE = '/^(\d+\.)?\d+[%pP]?\.\.(\d+\.)?\d+[%pP]?$/';
 
-    const VERSION = "1.4.2";
+    const VERSION = "1.5.0";
     /** @internal Do not change this value */
     const USER_AGENT = "CloudinaryPHP/1.1.4";
 
@@ -137,6 +137,10 @@ class Cloudinary {
       if (Cloudinary::is_assoc($array)){
         $encoded = array();
         foreach ($array as $key => $value) {
+          $value = !empty($value)
+            ? preg_replace('/([\|=])/', '\\\$1', $value)
+            : $value;
+
           array_push($encoded, $key . '=' . $value);
         }
         return implode("|", $encoded);
@@ -553,11 +557,14 @@ class Cloudinary {
         if ($resource_type == "image" && $type == "upload") {
           $resource_type = "images";
           $type = NULL;
-        } else if ($resource_type == "raw" && $type == "upload") {
+        } else if ($resource_type == "image" && $type == "private") {
+          $resource_type = "private_images";
+          $type = NULL;
+        }  else if ($resource_type == "raw" && $type == "upload") {
           $resource_type = "files";
           $type = NULL;
         } else {
-          throw new InvalidArgumentException("URL Suffix only supported for image/upload and raw/upload");
+          throw new InvalidArgumentException("URL Suffix only supported for image/upload, image/private and raw/upload");
         }
       }
 
@@ -734,7 +741,7 @@ class Cloudinary {
         $params = array(
           "allow_missing"            => \Cloudinary::option_get($options, "allow_missing"),
           "async"                    => \Cloudinary::option_get($options, "async"),
-          "expire_at"                => \Cloudinary::option_get($options, "expire_at"),
+          "expires_at"                => \Cloudinary::option_get($options, "expires_at"),
           "flatten_folders"          => \Cloudinary::option_get($options, "flatten_folders"),
           "flatten_transformations"  => \Cloudinary::option_get($options, "flatten_transformations"),
           "keep_derived"             => \Cloudinary::option_get($options, "keep_derived"),
