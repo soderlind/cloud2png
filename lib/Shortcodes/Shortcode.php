@@ -59,7 +59,6 @@ if ( ! class_exists( 'Cloud2PNG\Shortcodes\Shortcode' ) ) {
 					'crop'         => 'fill',
 					'gravity'      => 'north',
 					'fetch_format' => 'auto',
-					'tags'         => array( 'cloud2png' ),
 					'width'        => $arguments['width'],
 					'height'       => $arguments['height'],
 					'radius'       => $arguments['border_radius'],
@@ -81,7 +80,6 @@ if ( ! class_exists( 'Cloud2PNG\Shortcodes\Shortcode' ) ) {
 				// ob_start();
 				// echo cl_image_tag( $url, $settings );
 				// return ob_get_clean();
-				// return cl_image_tag( $url, $settings );
 
 				return  sprintf( '<img src="%s" width="%s" height="%s" />', cloudinary_url( $arguments['url'], $settings ), $img_width, $img_height );
 			}
