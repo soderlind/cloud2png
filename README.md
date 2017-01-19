@@ -19,7 +19,7 @@ In the Cloud2PNG Settings you can also enable a link to Cloud2PNG Customizer fro
 
 ## Use
 
-Add link to the site you'd like to create a snappshot of, by using the `[cloud2png]` shortcode, eg:
+Add link to the site you'd like to create a snapshot of, by using the `[cloud2png]` shortcode, eg:
 
 ```
 [cloud2png url="https://wordpress.org"]
@@ -71,7 +71,7 @@ function add_url ($out, $pairs, $atts ) {
 
 I code for fun, and I code to learn. I've tried to do this plugin using OOP at my best effort. There will be couplings that could be looser and not everything is DRY. I will update the plugin as I learn more and I will fix [issues that are reported](https://github.com/soderlind/cloud2png/issues/new).
 
-I'm following the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) with one exception, I'm using the PSR-4 autoloader and I've disabled the following rules:
+I'm following the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) with one exception, I'm using the [PSR-4 autoloader](http://www.php-fig.org/psr/psr-4/) and I've disabled the following rules:
 ```xml
 <rule ref="WordPress-Core">
 	<exclude name="Generic.Files.LowercasedFilename" />
@@ -80,6 +80,7 @@ I'm following the [WordPress Coding Standards](https://github.com/WordPress-Codi
 </rule>
 ```
 
+
 ## Credits
 Cloud2PNG is using:
 - The [Plugin Customizer](https://github.com/soderlind/plugin-customizer) framework.
@@ -87,6 +88,7 @@ Cloud2PNG is using:
 - The [PHP extension for Cloudinary](https://github.com/cloudinary/cloudinary_php)
 - The [PSR-4 Autoloader](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md#class-example)
 - The jQuery [boxShadow cssHooks](https://github.com/brandonaaron/jquery-cssHooks/blob/master/boxshadow.js), Copyright (c) 2010 Burin Asavesna (http://helloburin.com)
+    - I use CSS box-shadow to create [Better Rounded Borders](http://blog.teamtreehouse.com/css-tip-better-rounded-borders)
 
 
 ## Copyright and License
