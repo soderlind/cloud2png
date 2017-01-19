@@ -25,9 +25,47 @@ Add link to the site you'd like to create a snappshot of, by using the `[cloud2p
 [cloud2png url="https://wordpress.org"]
 ```
 
-## Customize the snapshots
+### Customize the snapshots
 
 Using the Cloud2PNG Customizer you can change the size and border of the snapshots.
+
+### Shortcode parameters
+
+You can override the Cloud2PNG Customizer using the shortcode parameters, they are (with defaults):
+
+- url=home_url( '/' )
+- width=430
+- height=225
+- border_width=0
+- border_radius=0
+- border_color=#000000
+
+```
+[cloud2png url="https://wordpress.org" width="300" height="400" border_width="5"]
+```
+
+### Adding Cloud2PNG to a theme plugin
+
+Using [do_shortcode()](https://developer.wordpress.org/reference/functions/do_shortcode/), you can add Cloud2PNG to a theme:
+
+```php
+
+echo do_shortcode( 'url="https://wordpress.org" width="300" height="400" border_width="5' );
+
+```
+
+or using the [shortcode_atts_{$shortcode}](https://developer.wordpress.org/reference/hooks/shortcode_atts_shortcode/) filter:
+
+```php
+
+add_filter ('shortcode_atts_cloud2png', 'add_url', 10, 3);
+function add_url ($out, $pairs, $atts ) {
+    $out['url'] = 'https://soderlind.no';
+    return $out;
+}
+
+```
+
 
 ## Sidenote
 
