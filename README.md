@@ -44,7 +44,7 @@ You can override the Cloud2PNG Customizer using the shortcode parameters, they a
 [cloud2png url="https://wordpress.org" width="300" height="400" border_width="5"]
 ```
 
-### Adding Cloud2PNG to a theme plugin
+### Adding Cloud2PNG to a theme
 
 Using [do_shortcode()](https://developer.wordpress.org/reference/functions/do_shortcode/), you can add Cloud2PNG to a theme:
 
