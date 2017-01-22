@@ -11,7 +11,7 @@
  * Plugin Name: Cloud2PNG
  * Plugin URI:  https://github.com/soderlind/cloud2png
  * Description: Capture snapshots of any website using Cloudinarys URL2PNG add-on.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author:      Per Soderlind
  * Author URI:  https://soderlind.no
  * Text Domain: cloud2png
@@ -21,7 +21,7 @@
 if ( version_compare( PHP_VERSION, '5.6.0' ) < 0 ) {
 	return add_action( 'admin_notices', 'cloud2png_admin_notice_php_version' );
 }
-define( 'CLOUD2PNG_VERSION', '1.0.0' );
+define( 'CLOUD2PNG_VERSION', '1.0.1' );
 define( 'CLOUD2PNG_PATH',   plugin_dir_path( __FILE__ ) );
 define( 'CLOUD2PNG_URL',   plugin_dir_url( __FILE__ ) );
 
