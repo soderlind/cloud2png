@@ -212,13 +212,13 @@ module.exports = function (grunt) {
 
 	grunt.registerTask( 'default', ['syntax'] );
 	grunt.registerTask( 'version_number', [ 'replace:reamde_md', 'replace:reamde_txt', 'replace:plugin_php' ] );
-	grunt.registerTask( 'pre_vcs', [ 'version_number' /*, 'makepot'*/] );
+	grunt.registerTask( 'pre_vcs', [ 'version_number' , 'makepot'] );
 	grunt.registerTask( 'changelog', [ 'githubChanges:dist'] );
 
 
 	grunt.registerTask( 'do_svn', [ 'svn_export', 'copy:svn_assets', 'copy:svn_trunk', 'copy:svn_tag', 'push_svn' ] );
 	grunt.registerTask( 'update_svn', [ 'copy:svn_assets', 'copy:svn_trunk', 'copy:svn_tag', 'push_svn' ] );
 	grunt.registerTask( 'do_git', [  'gitcommit', 'gittag', 'gitpush' ] );
-	grunt.registerTask( 'release', [ 'pre_vcs',  'do_git', /*'do_svn',*/ 'clean:post_build' ] );
+	grunt.registerTask( 'release', [ 'pre_vcs',  'do_git', 'do_svn', 'clean:post_build' ] );
 
 };
