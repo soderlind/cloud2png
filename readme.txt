@@ -71,7 +71,7 @@ function add_url ($out, $pairs, $atts ) {
 - A [Cloudinary account](https://cloudinary.com/signup)
 - Enable the [Cloudinary URL2PNG add-on](https://cloudinary.com/console/addons#url2png)
 
-When you have the prerequisites
+When you have the prerequisites:
 
 1. In Plugins->Add New, search for Cloud2PNG
 1. Click Install Now
@@ -114,3 +114,12 @@ Cloud2PNG is using:
 - The [PSR-4 Autoloader](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md#class-example)
 - The jQuery [boxShadow cssHooks](https://github.com/brandonaaron/jquery-cssHooks/blob/master/boxshadow.js), Copyright (c) 2010 Burin Asavesna (http://helloburin.com)
     - I use CSS box-shadow to create [Better Rounded Borders](http://blog.teamtreehouse.com/css-tip-better-rounded-borders)
+
+= Copyright and License =
+Cloud2PNG is copyright 2017 Per Soderlind
+
+Cloud2PNG is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
+
+Cloud2PNG is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with the Extension. If not, see http://www.gnu.org/licenses/.
