@@ -1,0 +1,21 @@
+## Change Log
+
+### 1.0.1 (2017/01/22 23:21 +00:00)
+- [8663368](https://github.com/soderlind/cloud2png/commit/8663368c46c606003a9b8e6dee6c895f9202552f) Version 1.0.1 (@soderlind)
+- [ff5a0a2](https://github.com/soderlind/cloud2png/commit/ff5a0a29a50498f19fef9840b6a2eeda7d2d3881) Add makepot and svn deployment (@soderlind)
+- [1138997](https://github.com/soderlind/cloud2png/commit/1138997c07c5664847c88eac57337af504ff90c1) Add copyright and license (@soderlind)
+- [e2f65e9](https://github.com/soderlind/cloud2png/commit/e2f65e9dea4e7653307e838c7b7838c3eea229cd) Add link to Settings from the plugin page (@soderlind)
+- [5d2e0fc](https://github.com/soderlind/cloud2png/commit/5d2e0fc5275db6840a075bc0fbc80c849a5ebf92) Add missing image file (@soderlind)
+- [46d8540](https://github.com/soderlind/cloud2png/commit/46d8540645d6acf622c319f28ead8ec7908db3a5) Add icons and banners (@soderlind)
+- [8b25ba6](https://github.com/soderlind/cloud2png/commit/8b25ba6c6fdcbaf10d015ba46218e2039d292073) Add readme.txt for the WordPress plugin directory (@soderlind)
+- [9522787](https://github.com/soderlind/cloud2png/commit/95227873d6a316bcf1e5dc7764aa23c51b10c96c) Remove unneeded	code (@soderlind)
+- [db49e00](https://github.com/soderlind/cloud2png/commit/db49e00c7bb40b61e8ef96c662e26dca4ba1b740) Update Cloudinary lib to v1.5.0 (@soderlind)
+- [c68258b](https://github.com/soderlind/cloud2png/commit/c68258b36c1f33a1f9b09564855caf00f5f95208) Fix typos (@soderlind)
+- [17b202b](https://github.com/soderlind/cloud2png/commit/17b202b080b98713149e11de7418b3bca88a26ac) Fix typo (@soderlind)
+- [141b7f1](https://github.com/soderlind/cloud2png/commit/141b7f1aad347b0c0b719f7c1e628826fe52d4b7) Add information about the shortcode (@soderlind)
+- [b761079](https://github.com/soderlind/cloud2png/commit/b761079a9e1f3e8e9fb4f82a7858781d3125bd66) Update example (@soderlind)
+- [bb035f3](https://github.com/soderlind/cloud2png/commit/bb035f397449310efda914103f96ccac69b4553f) Update (@soderlind)
+
+### 1.0.0 (2017/01/18 23:54 +00:00)
+- [9be21f6](https://github.com/soderlind/cloud2png/commit/9be21f65b0ec9787719291911df507af5dc58196) Version 1.0.0 (@soderlind)
+- [94ba555](https://github.com/soderlind/cloud2png/commit/94ba55564e3a4b1af2378c43895e1d2f359b31d7) Initial release (@soderlind)
