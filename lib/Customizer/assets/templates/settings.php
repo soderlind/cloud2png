@@ -25,7 +25,7 @@ img {
 <?php _e( 'Enter your account details, you\'ll find them at' ,'cloud2png' ); ?>  https://cloudinary.com/console
 </p>
 <p>
-	<img src="<?php echo CLOUD2PNG_URL;?>/assets/cloudinary-dashboard.png" />
+	<img src="<?php echo CLOUD2PNG_URL;?>lib/Customizer/assets/img/cloudinary-dashboard.png" />
 </p>
 </div>
 </body>
