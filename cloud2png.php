@@ -44,6 +44,12 @@ if ( defined( 'WPINC' ) ) {
 	add_action(	'plugins_loaded', function() {
 		$GLOBALS['cloud_to_png_shortcode'] = Cloud2PNG\Shortcodes\Shortcode::instance();
 		$GLOBALS['cloud_to_png_shortcode']->init();
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), function( $links ) {
+			$settings_links = array(
+				sprintf( '<a href="%s">%s</a>',  $GLOBALS['cloud_to_png_admin']->get_customizer_url( 'plugins.php', 'cloud2png_section[settings]' ), __( 'Settings', 'cloud2png' ) )
+			);
+			return array_merge( $links, $settings_links );
+		} );
 	} );
 }
 
