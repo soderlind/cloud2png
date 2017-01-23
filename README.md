@@ -4,29 +4,6 @@ Capture snapshots of any website using Cloudinarys URL2PNG add-on.
 
 <img src="assets/screenshot-1.gif" />
 
-## Prerequisites
-- PHP 5.6 (I use PHP 7.x on my development server)
-- A [Cloudinary account](https://cloudinary.com/signup)
-- Enable the [Cloudinary URL2PNG add-on](https://cloudinary.com/console/addons#url2png)
-
-## Download
-
-The plugin is available in the [WordPress plugin directory](https://wordpress.org/plugins/cloud2png/)
-
-## Installation
-
-When you have the prerequisites:
-
-1. In Plugins->Add New, search for Cloud2PNG
-1. Click Install Now
-1. When the plugin is installed, activate it.
-
-It will add the Cloud2PNG admin menu entry at `Settings->Cloud2PNG`
-
-Go to `Settings->Cloud2PNG`, and in `Settings` add `cloud name`, `api key` and `api secret`. You'll find them in the [Cloudinary Dashboard](https://cloudinary.com/console)
-
-In the Cloud2PNG Settings you can also enable a link to Cloud2PNG Customizer from the Admin Bar.
-
 ## Use
 
 Add link to the site you'd like to create a snapshot of, by using the `[cloud2png]` shortcode, eg:
@@ -75,6 +52,29 @@ function add_url ($out, $pairs, $atts ) {
 }
 
 ```
+
+## Prerequisites
+- PHP 5.6 (I use PHP 7.x on my development server)
+- A [Cloudinary account](https://cloudinary.com/signup)
+- Enable the [Cloudinary URL2PNG add-on](https://cloudinary.com/console/addons#url2png)
+
+## Download
+
+The plugin is available in the [WordPress plugin directory](https://wordpress.org/plugins/cloud2png/)
+
+## Installation
+
+When you have the prerequisites:
+
+1. In Plugins->Add New, search for Cloud2PNG
+1. Click Install Now
+1. When the plugin is installed, activate it.
+
+It will add the Cloud2PNG admin menu entry at `Settings->Cloud2PNG`
+
+Go to `Settings->Cloud2PNG`, and in `Settings` add `cloud name`, `api key` and `api secret`. You'll find them in the [Cloudinary Dashboard](https://cloudinary.com/console)
+
+In the Cloud2PNG Settings you can also enable a link to Cloud2PNG Customizer from the Admin Bar.
 
 
 ## Sidenote
