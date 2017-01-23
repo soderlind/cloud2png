@@ -9,9 +9,19 @@ Capture snapshots of any website using Cloudinarys URL2PNG add-on.
 - A [Cloudinary account](https://cloudinary.com/signup)
 - Enable the [Cloudinary URL2PNG add-on](https://cloudinary.com/console/addons#url2png)
 
+## Download
+
+The plugin is available in the [WordPress plugin directory](https://wordpress.org/plugins/cloud2png/)
+
 ## Installation
 
-You know the drill, download, add and activate the plugin. It will add the Cloud2PNG admin menu entry at `Settings->Cloud2PNG`
+When you have the prerequisites:
+
+1. In Plugins->Add New, search for Cloud2PNG
+1. Click Install Now
+1. When the plugin is installed, activate it.
+
+It will add the Cloud2PNG admin menu entry at `Settings->Cloud2PNG`
 
 Go to `Settings->Cloud2PNG`, and in `Settings` add `cloud name`, `api key` and `api secret`. You'll find them in the [Cloudinary Dashboard](https://cloudinary.com/console)
 
