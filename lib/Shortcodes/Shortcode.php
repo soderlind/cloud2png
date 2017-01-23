@@ -75,6 +75,11 @@ if ( ! class_exists( 'Cloud2PNG\Shortcodes\Shortcode' ) ) {
 					'sign_url'     => true,
 				);
 
+				// fix cloudinary radius bug (makes a radis even though radius = 0. so don't send radius parameter when it's 0)
+				if ( 0 === $settings['radius'] ) {
+					unset( $settings['radius'] );
+				}
+
 				if ( count( $border ) ) {
 					$settings = array_merge( $settings, $border );
 				}
