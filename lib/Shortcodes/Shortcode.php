@@ -28,14 +28,24 @@ if ( ! class_exists( 'Cloud2PNG\Shortcodes\Shortcode' ) ) {
 		}
 
 		public function cloud2png( $attributes ) {
+			// normalize attribute keys, lowercase
+    		$attributes = array_change_key_case((array)$attributes, CASE_LOWER);
 			$attributes = shortcode_atts( array(
-				'url' => home_url( '/' ),
-				'width' => \Cloud2PNG\Helper::get_option( 'width', 'cloud2png', '430' ),
-				'height' => \Cloud2PNG\Helper::get_option( 'height', 'cloud2png', '225' ),
-				'border_width' => \Cloud2PNG\Helper::get_option( 'border_width', 'cloud2png', '0' ),
+				'url'           => home_url( '/' ),
+				'width'         => \Cloud2PNG\Helper::get_option( 'width', 'cloud2png', '430' ),
+				'height'        => \Cloud2PNG\Helper::get_option( 'height', 'cloud2png', '225' ),
+				'border_width'  => \Cloud2PNG\Helper::get_option( 'border_width', 'cloud2png', '0' ),
 				'border_radius' => \Cloud2PNG\Helper::get_option( 'border_radius', 'cloud2png', '0' ),
-				'border_color' => \Cloud2PNG\Helper::get_option( 'border_color', 'cloud2png', '#000000' ),
+				'border_color'  => \Cloud2PNG\Helper::get_option( 'border_color', 'cloud2png', '#000000' ),
 			), $attributes, 'cloud2png' );
+
+			//harden attributes
+			$attributes['url']           = esc_url_raw( $attributes['url'] );
+			$attributes['width']         = (int) $attributes['width'];
+			$attributes['height']        = (int) $attributes['height'];
+			$attributes['border_width']  = (int) $attributes['border_width'];
+			$attributes['border_radius'] = (int) $attributes['border_radius'];
+			$attributes['border_color']  = \Cloud2PNG\Helper::esc_hex_color( $attributes['border_color'] );
 
 			return $this->webshot( $attributes );
 		}
