@@ -29,7 +29,7 @@ if ( ! class_exists( 'Cloud2PNG\Shortcodes\Shortcode' ) ) {
 
 		public function cloud2png( $attributes ) {
 			// normalize attribute keys, lowercase
-    		$attributes = array_change_key_case((array)$attributes, CASE_LOWER);
+			$attributes = array_change_key_case( (array) $attributes, CASE_LOWER );
 			$attributes = shortcode_atts( array(
 				'url'           => home_url( '/' ),
 				'width'         => \Cloud2PNG\Helper::get_option( 'width', 'cloud2png', '430' ),

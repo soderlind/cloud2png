@@ -43,7 +43,7 @@ if ( ! class_exists( 'Cloud2PNG\Helper' ) ) {
 		}
 
 		public static function esc_hex_color( $colorcode, $default = '#000000' ) {
-    		$colorcode = ltrim( $colorcode, '#' );
+			$colorcode = ltrim( $colorcode, '#' );
 			if ( ctype_xdigit( $colorcode ) && ( 6 == strlen( $colorcode ) || 3 == strlen( $colorcode ) ) ) {
 				return '#' . $colorcode;
 			} else {
