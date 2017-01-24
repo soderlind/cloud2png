@@ -1,8 +1,8 @@
 {
   "name": "cloud2png",
   "title": "cloud2png",
-  "version": "1.0.2",
-  "git_tag": "1.0.2",
+  "version": "1.0.3",
+  "git_tag": "1.0.3",
   "description": "Capture snapshots of any website using Cloudinarys URL2PNG add-on.",
   "main": "cloud2png.php",
   "scripts": {

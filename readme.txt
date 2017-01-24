@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: webshot, screenshot, snapshot, cloudinary, url2png
 Requires at least: 4.6
 Tested up to: 4.7
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ When you have the prerequisites:
 2. Get the settings from the Cloudinary Dashboard
 
 == Changelog ==
+
+= 1.0.3 =
+* Fix cloudinary radius bug. Cloudinary draws a radius even though the radius = 0, so don't send radius parameter when it's 0.
 
 = 1.0.2 =
 * Harden shortcode attributes
