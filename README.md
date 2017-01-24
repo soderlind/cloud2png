@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/soderlind/cloud2png.svg?branch=master)](https://travis-ci.org/soderlind/cloud2png) [![Code Climate](https://codeclimate.com/github/soderlind/cloud2png/badges/gpa.svg)](https://codeclimate.com/github/soderlind/cloud2png)
 # Cloud2PNG
+
+[![Build Status](https://travis-ci.org/soderlind/cloud2png.svg?branch=master)](https://travis-ci.org/soderlind/cloud2png) [![Code Climate](https://codeclimate.com/github/soderlind/cloud2png/badges/gpa.svg)](https://codeclimate.com/github/soderlind/cloud2png)
 
 Capture snapshots of any website using Cloudinarys URL2PNG add-on.
 
