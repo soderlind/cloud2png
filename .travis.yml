@@ -15,7 +15,7 @@ matrix:
   include:
     # aliased to a recent 5.6.x version
     - php: '5.6'
-      env: SNIFF=1
+      env: SNIFF=0
     # aliased to a recent 7.x version
     - php: '7.0'
     # aliased to a recent 7.1.x version
@@ -62,4 +62,4 @@ script:
     # -n flag: Do not print warnings. (shortcut for --warning-severity=0)
     # --standard: Use WordPress as the standard.
     # --extensions: Only sniff PHP files.
-    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -n . --standard=./phpcs.xml --ignore=./lib/cloudinary/*,./lib/plugin-customizer/assets/twentysixteen/* --extensions=php; fi
+    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n . --standard="WordPress-Core" --extensions=php; fi
